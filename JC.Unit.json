@@ -1,0 +1,13 @@
+﻿{
+	"ConnectionDefinitions": {
+		"Provider": "SqlServerConnectionDefinitionProvider",
+		"Settings": "Data Source=sql-qalab.database.windows.net;Uid=tester;Pwd=Superstar68;Initial Catalog=TestMgmt;"
+	},
+	"TestDefinitions": {
+		"Provider": "SqlServerTestDefinitionProvider",
+		"Settings": "Data Source=sql-qalab.database.windows.net;Uid=tester;Pwd=Superstar68;Initial Catalog=TestMgmt;"
+	},
+	"Settings": {
+		"MaximumErrorCount": 10
+	}
+}
