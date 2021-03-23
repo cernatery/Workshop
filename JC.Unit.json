@@ -1,0 +1,13 @@
+﻿{
+	"ConnectionDefinitions": {
+		"Provider": "YamlConnectionDefinitionProvider",
+		"Settings": "..\\TestDefinitions.yaml"
+	},
+	"TestDefinitions": {
+		"Provider": "YamlTestDefinitionProvider",
+		"Settings": "..\\TestDefinitions.yaml"
+	},
+	"Settings": {
+		"MaximumErrorCount": 10
+	}
+}

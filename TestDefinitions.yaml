@@ -1,0 +1,43 @@
+Connection:
+#--------------------------------------------------------------------------------#
+  - 
+    ConnectionName: AW
+    ConnectionType: SqlServer
+    ConnectionString: Data Source=sql-qalab.database.windows.net;Uid=tester;Pwd=Superstar68;Initial Catalog=AdventureWorks2019;
+  - 
+    ConnectionName: AWDW
+    ConnectionType: SqlServer
+    ConnectionString: Data Source=sql-qalab.database.windows.net;Uid=tester;Pwd=Superstar68;Initial Catalog=AdventureWorksDW2019;
+#--------------------------------------------------------------------------------#   
+   
+Test:
+#--------------------------------------------------------------------------------#
+  -
+    TestSuite: Smoke test
+    Order: 1
+    TestCase: Sales.CreditCard
+    TestName: Len of Card Number
+    TestQuerySource: AW
+    TestQuery: >
+      SELECT CardNumber 
+      FROM [Sales].[CreditCard]
+      WHERE LEN(CardNumber) <> 14
+    TestTypeName: ZeroRows
+#--------------------------------------------------------------------------------#
+  -
+    TestSuite: Integration test
+    Order: 2
+    TestCase: Sales.SalesOrderHeader x dbo.FactInternetSales
+    TestName: Count of rows
+    TestQuerySource: AW
+    TestQuery: >
+      SELECT COUNT(*)  FROM [Sales].[SalesOrderHeader] H 
+      JOIN Sales.SalesOrderDetail D 
+      ON D.SalesOrderID = H.SalesOrderID 
+      WHERE OnlineOrderFlag = 1
+    ReferenceQuerySource: AWDW
+    ReferenceQuery: > 
+      SELECT COUNT(*) 
+      FROM [dbo].[FactInternetSales]
+    TestTypeName: SameData
+#--------------------------------------------------------------------------------#
