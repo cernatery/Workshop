@@ -17,6 +17,7 @@ Test:
     Order: 1
     TestCase: Sales.CreditCard
     TestName: Len of Card Number
+    TestDescription: Checks whether a card number has the required lenght
     TestQuerySource: AW
     TestQuery: >
       SELECT CardNumber 
@@ -29,6 +30,7 @@ Test:
     Order: 2
     TestCase: Sales.SalesOrderHeader x dbo.FactInternetSales
     TestName: Count of rows
+    TestDescription: We compare count of rows in InternetSales (between staging and fact table)
     TestQuerySource: AW
     TestQuery: >
       SELECT COUNT(*)  FROM [Sales].[SalesOrderHeader] H 
