@@ -2,7 +2,7 @@
 
 Link pro přihlášení se do Azure Lab Services:
 
-[Azure Lab Services](https://labs.azure.com/register/ctslp22s)
+[Azure Lab Services](https://labs.azure.com/register/t5vxjqi8)
 
 
 ## 1.  Přihlaste se pod vaším Microsoft účtem (osobní nebo organizační)
