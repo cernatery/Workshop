@@ -2,14 +2,10 @@
 
 Link pro přihlášení se do Azure Lab Services:
 
->  
-
 [Azure Lab Services](https://labs.azure.com/register/ctslp22s)
 
- 
 
 ## 1.  Přihlaste se pod vaším Microsoft účtem (osobní nebo organizační)
-
 
 ![Machine generated alternative text: Microsoft Pick an account Which
 account do you want to sign out of? Tomas Tucek \@seznam.cz Signed in
@@ -33,22 +29,18 @@ your lab All virtual machines have been claimed. Please contact the lab
 owner to increase the capacity of the lab.
 ](Images/media/i3.png)
 
->  
 
 ## 4.  V opačném případě se vám objeví vám dostupné Laby
 
->  
 
 -   Klikněte na náš lab - stáhne se vám .rdp soubor
 
 -   Na tento klikněte také
 
->  
 
 ![](Images/media/i4.png)
 
 -   Potvrďte další dialogy přihlášení
-
 
 ![Machine generated alternative text: Remote Desktop Connection tNs
 remte be you to This remote connection could harm your Bcal or remote
@@ -58,7 +50,6 @@ Connection ml ab -996c7cd 4c2e4ccf-972a 4b 83054%cb 6 north Don t ask me
 again for connections to this computer Show Details
 ](Images/media/i5.png)
 
- 
 
 ![Machine generated alternative text: Remote Desktop Connection
 Connecting to ml 4 a b -996c7cd 4c2e4ccf-972a 4b 83054%cb 6 northe
@@ -67,7 +58,6 @@ Inflating remote connection
 
 
 ## 5.  Zadejte přihlašovací údaje
-
 
 -   Vyberte \"more choices\"
 
